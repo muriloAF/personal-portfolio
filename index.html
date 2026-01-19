@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Murilo Alves da Fonseca</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body class="theme-dark" data-light-video="videos\waves-white.mp4" data-dark-video="...">
+  <div id="bg-video-wrap" aria-hidden="true">
+    <video id="bg-video" autoplay muted loop playsinline></video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <div class="site-content">
+    <header>
+        <nav>
+            <button class="menu"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" role="img" 
+                aria-label="Menu" class="icon-menu"> <title>Menu</title> 
+                <rect x="3" y="6" width="18" height="2" rx="1" fill="currentColor"/> 
+                <rect x="3" y="11" width="18" height="2" rx="1" fill="currentColor"/> 
+                <rect x="3" y="16" width="18" height="2" rx="1" fill="currentColor"/> </svg></button>
+
+            <ul class="hidden">
+                <li class="nav-links">
+                    <a href="#">Sobre mim</a>
+                    <a href="#">Projetos</a>
+                    <a href="#">Certificados</a>
+                    <a href="#" class="contato">Entre em contato</a>
+                </li>   
+
+                
+            </ul>
+            <button id="theme-toggle">
+                        <svg class="icon icon-sol" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                        </svg>
+                    
+                        <svg class="icon icon-lua" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                        </svg>
+                    </button>
+
+        </nav>
+
+    </header>
+    <section class="sobre-mim">
+    <h1 class="title nome">Murilo Alves da Fonseca</h1>
+    <h2 class="subtitle carreira">Desenvolvedor Júnior</h2>
+    
+
+            <p class="introduction">Sou desenvolvedor web júnior focado em criar soluções funcionais e bem estruturadas. Tenho experiência com <span><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML</a></span>, <span><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS</a></span>, <span><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">JavaScript</a></span>, <span><a href="https://www.hostinger.com/br/tutoriais/o-que-e-php-guia-basico" target="_blank">PHP</a></span>, <span><a href="https://aws.amazon.com/pt/what-is/python/" target="_blank">Python</a></span>, <span><a href="https://azure.microsoft.com/pt-br/resources/cloud-computing-dictionary/what-is-java-programming-language" target="_blank">Java</a></span> e <span><a href="https://support.microsoft.com/pt-br/topic/acessar-sql-conceitos-b%C3%A1sicos-vocabul%C3%A1rio-e-sintaxe-444d0303-cde1-424e-9a74-e8dc3e460671" target="_blank">SQL</a></span>, sempre buscando escrever código limpo e escalável. Atualmente, estou evoluindo meus conhecimentos para atuar profissionalmente e entregar valor real através da tecnologia.</p>
+        
+    </section>
+    <aside>
+        <img src="img/Murilo_Perfil.png" alt="Murilo Alves da Fonseca">
+    </aside>
+    <section class="projetos">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div id="container">
+               <div class="project-card" id="principal">
+                  <a class="projeto-button" href="https://avenasing.rf.gd/html/Pagina_Inicial.html" target="_blank">
+                    <div class="image-warper">
+                        <img src="img\Avena_project.png" alt="Projeto 1">
+                    </div>
+                    <h3>Projeto Avena</h3>
+                    <p>Site que ajuda trabalhadoras na informalidade, fornecendo conexão entre trabalhadora e cliente e muitas mais opções de alavancagem de carreira.</p>
+                  </a>
+                </div>
+                  
+                
+               <div class="project-card">
+                <a class="projeto-button" href="https://github.com/muriloAF/Fundamentos_Python" target="_blank">
+                  <div class="image-warper">
+                    <img src="img\Python-Banner.png" alt="Projeto 1">
+                  </div>
+                  <h3>Trilha de Aprendizado em Python</h3>
+                  <p>Conjunto de projetos desenvolvidos ao longo da formação, mostrando evolução em lógica, estruturas de dados e automação.</p>
+                </a>
+              </div>
+
+                
+
+               <div class="project-card">
+                <a class="projeto-button" href="doc\Analise de Vinhos - Murilo Alves da Fonseca.pdf" target="_blank">
+                  <div class="image-warper">
+                    <img src="img\DataScience-Banner.png" alt="Projeto 1">
+                  </div>
+                  <h3>Relatório de Análise de Vinhos</h3>
+                  <p>Relatório realizado no curso de Data Science com o objetivo de utilizar Python para análise de dados extraídos de uma planilha excel.</p>
+                </a>
+               </div>
+
+
+               <div class="project-card">
+                 <a class="projeto-button" href="html\apis.html" target="_blank">
+                  <div class="image-warper">
+                    <img src="img\Murilo_Perfil.png" alt="Projeto 1">
+                  </div>
+                  <h3>Consumo de APIs</h3>
+                  <p>em desenvolvimento...</p>
+                 </a>
+               </div>
+               <div class="project-card">
+                  <div class="image-warper">
+                    <img src="img\Murilo_Perfil.png" alt="Projeto 1">
+                  </div>
+                  <h3>Projeto Avena</h3>
+                  <p>Site para oferecer ajuda para trabalhadoras informais, fornecendo conexão entre trabalhadora e cliente.</p>
+               </div>
+               <div class="project-card">
+                <div class="image-warper">
+                  <img src="img\Murilo_Perfil.png" alt="Projeto 1">
+                </div>
+                  <h3>Projeto Avena</h3>
+                  <p>Site para oferecer ajuda para trabalhadoras informais, fornecendo conexão entre trabalhadora e cliente.</p>
+               </div>
+        </div>
+    </section>
+
+    <section class="certificados">
+
+    </section>
+
+    <footer>
+        
+    </footer>
+  </div>
+
+  <script src="js/header-hide.js"></script>
+  <script src="js/bg-video.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/theme-button.js"></script>
+</body>
+</html>

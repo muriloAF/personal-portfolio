@@ -1,0 +1,57 @@
+aside{
+    right: 0%;
+    left:80%;
+    top:0;
+    width:fit-content;
+    height: 1000px;
+}
+
+aside img{
+    z-index: 0;
+    min-width:50%;
+    max-width: 100%;
+    height: auto;
+    transform: translate(-60%, -35%);
+}
+.site-content{
+    margin-top:10%;
+}
+/* Background video styles */
+#bg-video-wrap{
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+#bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+
+#bg-video.fade-out {
+  opacity: 0;
+}
+
+#bg-video.fade-in {
+  opacity: 1;
+}
+.video-overlay{
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+
+
+
+/* Ensure site content sits above the video */
+.site-content, header, section, aside, footer{ position: relative; z-index: 1; }
+.hidden{ display: none; }
+.shown{ display: block; }
