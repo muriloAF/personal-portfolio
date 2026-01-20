@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,33 +14,36 @@
     <session class="clima">
         <div class="container">
             <div class="form">
-                <form action="POST">
                     <div class="form-container">
                         <h2>Verifique o clima da sua cidade</h2>
                         <input type="text" id="cidadeInput" placeholder="Digite o nome da cidade">
                         <button id="buscarBtn">
                             Buscar Clima
                         </button>
+                        <p id="erro_null" class="hide">Digite uma cidade!</p>
+                        <p id="erro_incorrect" class="hide">Não foi possível encontrar dados desta cidade.</p>
                     </div>    
-                </form>
             </div>
-            <div id="weather-data">
+            <div id="weather-data" class="hide">
                 <div id="container-data">
-                    <span id="cidade">São Paulo</span>
-                    <p id="tempratura"><span>25</span>&deg;C</p>
-                </div>
+                    <div class="clima-container">
+                        <span >📍</span><span id="cidade">---------</span></div>
+                        <p id="temperatura"><span>--</span>&deg;C</p>
+                    </div>
                 <div id="container-descricao">
 
                     
 
                     <div id="condicoes">
-                        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condições do tempo" id="wather-icon">
-                        <p id="description">Nublado</p>
+                        <div class="clima-container">
+                            <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condições do tempo" id="wather-icon">
+                            <p id="description">--</p>
+                        </div>
                     </div>
                     
-                    <div id="humidade">
-                        <p id="umidade">
-                            <span>60</span>%
+                    <div>
+                        <p id="humidade">
+                            💧<span>--</span>%
                         </p>
                     </div>
                 </div>
@@ -48,5 +51,5 @@
         </div>
     </session>
 </body>
-<script src="js/apiConfig.js"></script>
+<script src="/js/apiConfig.js"></script>
 </html>

@@ -1,4 +1,9 @@
+body{
+    padding:0;
+    margin: 0;
+}
 .clima{
+    background:linear-gradient(40deg, rgb(71, 71, 255), #f5f5f5);
     width:100%;
     height:100vh;
     display:flex;
@@ -6,6 +11,7 @@
     align-items:center;
 }
 .container{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.384);
     background: rgb(76, 76, 255);
     display:flex;
     justify-content:center;
@@ -59,29 +65,51 @@
     color:#fff;
     font-size:1.5rem;
 }
-#weather-data{
-    margin-top:20px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
+.hide{
+    display: none;
 }
+
 #container-data{
     display:flex;
     justify-content:center;
     align-items:center;
     gap:100px;
 }
+
+#description{
+    font-weight: bold;
+    text-transform: capitalize;
+}
 #container-descricao{
     display:flex;
     justify-content: center;
     align-items:center;
     gap:100px;
-    transform: translateX(-18.5%);
 }
-#condicoes{
+#container-data .clima-container{
+    width:100%;
     display:flex;
     justify-content:center;
     align-items: center;
+    flex-direction: row;
+    gap:10px;
+    margin:0;
+}
+
+#condicoes .clima-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    gap:10px;
+    margin:0;
+}
+.clima-container img{
+    width: 70px;
+}
+#erro_null{
+    width: fit-content;
+    margin: 0;
+    padding: 0;
 }
