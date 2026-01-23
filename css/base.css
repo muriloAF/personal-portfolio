@@ -4,13 +4,13 @@
 }
 html, body {
   width: 100%;
-  scrollbar-gutter: stable;
-  
+  max-width: 100%;
+  overflow-x: hidden;
 }
-.site-content {
-  min-height: 100vh;
-  overflow: hidden;
-  
+.site-content{
+    width: 100%;
+    position: relative;
+    margin-top:10%;
 }
 body {
   transition:
