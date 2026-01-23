@@ -16,7 +16,7 @@ Some of the projects presented in this portfolio include:
 - **TCC Website** – A complete website developed as my final technical project.
 - **Python Exercises Repository** – A collection of Python exercises showing my learning progression, from basics to more advanced concepts.
 - **Data Analysis Report** – A data analysis project focused on extracting insights and presenting results clearly using python.
-- **API Consumption Project** – A project demonstrating how to consume and handle data from an external API (in progress).
+- **API Consumption Project** – A project demonstrating how to consume and handle data from an external API.
 
 ## 🎯 Purpose
 

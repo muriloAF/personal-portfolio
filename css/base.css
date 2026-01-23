@@ -4,10 +4,13 @@
 }
 html, body {
   width: 100%;
+  scrollbar-gutter: stable;
+  
 }
 .site-content {
   min-height: 100vh;
   overflow: hidden;
+  
 }
 body {
   transition:
@@ -25,9 +28,7 @@ a, header, nav, section, h1, h2, p {
     background-color 0.5s ease,
     border-color 0.5s ease;
 }
-html {
-  scrollbar-gutter: stable;
-}
+
 body::-webkit-scrollbar {
   width: 1px; 
   height: 1px;
@@ -37,7 +38,8 @@ body::-webkit-scrollbar-thumb {
   height:auto;
   margin: 1px;
   border-radius: 50px;
-  background-color: #525252;
+  background-color: #a3a3a3;
+  filter: brightness(1.5);
 }
 body::-webkit-scrollbar-track {
   background-color: #5e5e5e33;
@@ -48,3 +50,9 @@ body::-webkit-scrollbar-track {
 
 /* DESKTOP */
 @media (min-width: 1024px) {}
+
+#projetos,
+#certificados,
+#contato {
+  scroll-margin-top: 100px;
+}
